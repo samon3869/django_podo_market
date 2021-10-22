@@ -38,6 +38,9 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+ACCOUNT_SIGNUP_REDIRECT_URL = "index"
+LOGIN_REDIRECT_URL = "index"
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -137,5 +140,7 @@ STATIC_URL = '/static/'
 # allauth setting
 
 AUTH_USER_MODEL = "podomarket.User"
+
+# Email settings
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

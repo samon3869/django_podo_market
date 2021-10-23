@@ -11,3 +11,4 @@ class SignupForm(forms.ModelForm):
         user.nickname = self.cleaned_data["nickname"]
         user.kakao_id = self.cleaned_data["kakao_id"]
         user.address = self.cleaned_data["address"]
+        user.save()
